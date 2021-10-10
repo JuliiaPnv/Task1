@@ -7,7 +7,7 @@ int main()
     N = 1;
     for (N; N <= 10; N++)
     {
-        cout << "введите число = ";
+        cout << "A = ";
         cin >> A;
         max = A - 1;
         min = 2;
@@ -20,11 +20,11 @@ int main()
         }
         if (min != A && max != 1)
         {
-            cout << "минимальный делитель = " << min << endl << "максимальный делитель = " << max << endl;
+            cout << "min divisor = " << min << endl << "max divisor = " << max << endl;
             d = min * max;
-            cout << "произведение делителей d = " << d << endl;
+            cout << "d = " << d << endl;
         }
         else
-            cout << "число " << A << " является простым числом" << endl;
+            cout << A << " is prime number" << endl;
     }
 }
